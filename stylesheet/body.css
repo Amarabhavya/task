@@ -1,0 +1,282 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#home{
+    font-size: 14px;
+    font-family: HelveticaNeue;
+    margin-top: 37px;
+    margin-left: 140px;
+  }
+#account{
+    font-size: 42px;
+    font-family: HelveticaNeue;
+    color: #022737;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+#church{
+    font-size: 16px;
+    font-family: HelveticaNeue;
+    color: #022737;
+    margin-top: 15px;
+    margin-left: 140px;
+}
+#warning{
+    width:1159px;
+    height: 64px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+#vl{
+    border-left: 6px solid  #e37222;
+    height: 64px;
+    margin-right: 0;
+    display: flex;
+    
+}
+.warn{
+    margin-left: 140px;
+    margin-right: 0;
+    display: flex;
+}
+.middle{
+    max-width: 1440px;
+    height: 746px;
+    background-color: #eaeaea;
+    display: block;
+}
+.box{ 
+    margin-top: 70px;
+    display: flex;
+}
+.current{
+    width: 373px;
+    height: 172px;
+    margin-left: 140px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color:white;
+    box-shadow: 0 9px 21px 0 rgba(128, 152, 213, 0.08);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+}
+.rect{
+    width: 766px;
+    height: 364px;
+    background-color:white;
+    margin-top: 50px;
+    margin-right: 141px;
+    
+}
+.cur_avail{
+    display: block;
+}
+#transaction {
+    font-size: 16px;
+    color: #006778;
+}
+
+p a{
+    text-decoration: none;
+    color: black;
+}   
+p a:hover:not(.active){
+    color: #006778;
+} 
+p .active{
+    color: #006778;
+    border-top: 2px solid #006778;
+    background-color: white;
+
+}
+.grants{
+    width:120px;
+    height:56px;
+    background-color:#eaeaea ;
+    margin:0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid   rgba(0, 103, 120, 0.1);
+}
+#contributions{
+    width:160px;
+    height:56px;
+    background-color:#eaeaea ;
+    margin:0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid rgba(0, 103, 120, 0.1);
+}
+.exchange{
+    width:145px;
+    height:56px;
+    background-color:#eaeaea ;
+    margin:0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid rgba(0, 103, 120, 0.1);
+}
+.ot{
+    width:220px;
+    height:56px;
+    background-color:#eaeaea ;
+    margin:0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid rgba(0, 103, 120, 0.1);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+.gift{
+    text-decoration: underline;
+    color: #006778;
+    font-size: 20px;
+    font-family: BerkeleyStd;
+    margin-left: 32px;
+    margin-top: 21px;
+}
+.data{
+    list-style-type: none;
+    display: flex;
+    padding-right: 144px;
+    justify-content:space-evenly;
+
+}
+.value{
+    list-style-type: none;
+    display: flex;
+    color: #022737;
+    font-weight: bold;
+}
+.data2{
+    list-style-type: none;
+    display: flex;
+    padding-right: 144px;
+
+}
+.value2{
+    list-style-type: none;
+    display: flex;
+    color: #022737;
+    font-weight: bold;
+}
+.hline{
+    border: 1px solid #d4d4d4;
+    margin-left: 32px;
+    margin-right: 37px;
+}
+.sidemenu{
+    background-color:#006778;
+    color: white;
+    width: 200px;
+    height: 50px;
+    display: block;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.menu a{
+    text-decoration: none;
+}
+.manage{
+    background-color: white;
+    color: #006778;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+.learnmore{
+    width: 1060px;
+    height: 172px;
+    background-color:white;
+    margin-left: 140px;
+    margin-top: 30px;
+    margin-right: 141px;
+    display:flex;
+}
+section{
+    display: flex;
+}
+.learn{
+    font-size: 24px;
+    color: #022737;
+    font-family: BerkeleyStd;
+    letter-spacing: 0.5px;
+}
+.lorem{
+    font-size: 16px;
+    color:  #505050;
+    font-family: HelveticaNeue;
+    margin-left: 118px;
+}
+.leaf{
+    width: 163px;
+    height: 172px;
+    margin-left: 120px;
+}
+.lbutton{
+    width: 27px;
+    height: 27px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 50%;
+}
+.rbutton{
+    width: 27px;
+    height: 27px;
+    margin-top: 60px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 50%;
+}
+.invite{
+    width: 500px;
+    height: 40px;
+    background-color: #006778;
+    color: white;
+    margin-top: 51px;
+    margin-bottom: 47px;
+}
+.down{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+}
+.menu  button:hover .down{
+    display: block;
+    position:absolute;
+    background-color:white;
+    width: 160px;
+    height: 50px;
+    text-align: left;
+}
+.crossbtn{
+    display: flex;
+    border: none;
+    margin-right: 140px;
+}
+  
+
+
+  

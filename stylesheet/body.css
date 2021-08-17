@@ -1,46 +1,57 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('../assets/fonts/HelveticaNeue/HelveticaNeue-Condensed.ttf');
+}
+@font-face {
+    font-family: BerkeleyStd;
+    src: url('../assets/fonts/BerkeleyStd-Book.otf');
+  }
 
 body{
     margin: 0;
     padding: 0;
 }
-#home{
+.home{
     font-size: 14px;
     font-family: HelveticaNeue;
     margin-top: 37px;
     margin-left: 140px;
   }
-#account{
+.account{
     font-size: 42px;
     font-family: HelveticaNeue;
     color: #022737;
     margin-top: 50px;
     margin-left: 140px;
 }
-#church{
+.church{
     font-size: 16px;
     font-family: HelveticaNeue;
     color: #022737;
     margin-top: 15px;
     margin-left: 140px;
 }
-#warning{
-    width:1159px;
-    height: 64px;
+.balance{
+    margin-left: 140px;
+}
+.warning{
+    /* width:1159px;
+    height: 64px; */
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
-}
-#vl{
-    border-left: 6px solid  #e37222;
-    height: 64px;
-    margin-right: 0;
-    display: flex;
-    
+    border-left: 6px solid #e37222;
 }
 .warn{
     margin-left: 140px;
     margin-right: 0;
     display: flex;
+    width:1430px;
+    height: 64px;
+}
+.pending{
+    text-decoration: underline;
+    color: #006778;
 }
 .middle{
     max-width: 1440px;
@@ -60,13 +71,40 @@ body{
     margin-bottom: 20px;
     background-color:white;
     box-shadow: 0 9px 21px 0 rgba(128, 152, 213, 0.08);
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    justify-content: left;
+    align-content: left;
+    align-items: left;
     display: flex;
     font-size: 24px;
+    margin-top: 50px;
 }
-.rect{
+.currentbalance{
+    margin-left: 30px;
+}
+.available{
+    width: 373px;
+    height: 172px;
+    margin-left: 140px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color:white;
+    box-shadow: 0 9px 21px 0 rgba(128, 152, 213, 0.08);
+    justify-content: left;
+    align-content: left;
+    align-items: left;
+    display: flex;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.availablebalance{
+    margin-left: 30px;
+}
+.amount{
+    color: #69923a;
+    font-size: 42px;
+}
+
+.contentwrapper{
     width: 766px;
     height: 364px;
     background-color:white;
@@ -74,26 +112,26 @@ body{
     margin-right: 141px;
     
 }
+.summary{
+    text-decoration: none;
+}
 .cur_avail{
     display: block;
 }
-#transaction {
+.transaction {
     font-size: 16px;
     color: #006778;
 }
 
-p a{
+.nav p a{
     text-decoration: none;
     color: black;
 }   
-p a:hover:not(.active){
+.nav p a:hover:not(.active){
     color: #006778;
 } 
-p .active{
+.active{
     color: #006778;
-    border-top: 2px solid #006778;
-    background-color: white;
-
 }
 .grants{
     width:120px;
@@ -109,13 +147,14 @@ p .active{
 #contributions{
     width:160px;
     height:56px;
-    background-color:#eaeaea ;
+    background-color:white ;
     margin:0;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items:center;
-    border: 1px solid rgba(0, 103, 120, 0.1);
+    color: #006778;
+    border-top: 4px solid #006778;
 }
 .exchange{
     width:145px;
@@ -138,6 +177,21 @@ p .active{
     justify-content: center;
     align-items:center;
     border: 1px solid rgba(0, 103, 120, 0.1);
+}
+.tax{
+    margin-left: 32px;
+}
+.entereddata{
+    margin-left: -70px;
+}
+.edate{
+    margin-left: -10px;
+}
+.rdate{
+    margin-left: 75px;
+}
+.shares{
+    margin-left: 80px;
 }
 .nav{
     display: flex;
@@ -181,12 +235,32 @@ p .active{
     margin-left: 32px;
     margin-right: 37px;
 }
-.sidemenu{
+
+.contributions_button{
     background-color:#006778;
     color: white;
     width: 200px;
     height: 50px;
     display: block;
+    margin-left: 141px;
+
+}
+.grant_button{
+    background-color:#006778;
+    color: white;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin-left: 80px;
+}
+.exchange_button{
+    background-color:#006778;
+    color: white;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin-left: 80px;
+
 }
 .menu{
     display: flex;
@@ -203,7 +277,10 @@ p .active{
     width: 200px;
     height: 50px;
     border: none;
+    margin-left: 80px;
+    padding-left: 20px;
 }
+
 .learnmore{
     width: 1060px;
     height: 172px;
@@ -227,6 +304,7 @@ section{
     color:  #505050;
     font-family: HelveticaNeue;
     margin-left: 118px;
+    margin-top: 50px;
 }
 .leaf{
     width: 163px;
@@ -250,6 +328,17 @@ section{
     border: none;
     border-radius: 50%;
 }
+.create{
+    width: 500px;
+    height: 40px;
+    background-color: #006778;
+    color: white;
+    margin-top: 51px;
+    margin-bottom: 47px;
+    margin-left: 140px;
+    margin-right: 40px;
+
+}
 .invite{
     width: 500px;
     height: 40px;
@@ -257,6 +346,7 @@ section{
     color: white;
     margin-top: 51px;
     margin-bottom: 47px;
+    margin-right: 50px;
 }
 .down{
     display: none;
@@ -274,9 +364,22 @@ section{
 .crossbtn{
     display: flex;
     border: none;
-    margin-right: 140px;
+    margin-right: 100px;
 }
   
+@media only screen and (min-width:768px) 
+{
+    .rectangle{
+        width: 100%;
+    }
+    .warning{
+        width: 70%;
+    }
+    .middle{
+        display: block;
+    }
+    
+}
 
 
   

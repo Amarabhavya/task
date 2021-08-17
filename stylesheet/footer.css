@@ -1,3 +1,11 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('../assets/fonts/HelveticaNeue/HelveticaNeue-Condensed.ttf');
+}
+@font-face {
+    font-family: BerkeleyStd;
+    src: url('../assets/fonts/BerkeleyStd-Book.otf');
+}
 footer{
    max-width:1440px;
     height: 407px;
@@ -25,9 +33,8 @@ ul{
 
 .footer-col ul li {
     margin-top:20px;
-    font-size: 14px;
+    font-size: 12px;
     font-family: HelveticaNeue;
-    font-weight: bold;
     color: white;
     display: block;
 }
@@ -45,6 +52,7 @@ ul{
     font-family:  HelveticaNeue;
     font-size: 12px;
     margin-bottom: 0;
+    padding: 0;
 }
 .footer-bot-logo {
     width: 162px;

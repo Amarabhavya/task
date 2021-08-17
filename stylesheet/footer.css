@@ -6,63 +6,130 @@
     font-family: BerkeleyStd;
     src: url('../assets/fonts/BerkeleyStd-Book.otf');
 }
-footer{
-   max-width:1440px;
-    height: 407px;
-    
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --background_color: #022737;
+    --white-two: whitesmoke;
+    --char-color: #505050;
+    --button: #006778;
+    --line: #006778;
+    --background-body: #eaeaea;
+    --mos-green: #69923a;
+    --border-taskbar-body: #d9d9d9;
+    --background-taskbar-body: #f1f1f1;
 }
-.vlogo{
-    width:120px;
-    height: 48px;
-}
- .container{
-    background-color: #022737;
-    height: 268px;
-} 
-.row{
+ 
+.footer_top{
+    height: auto;
+    padding: 25px 0px;
+    background-color: var(--background_color);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-content: space-between;
 }
-
+.footer_top_sec1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 10%;
+}
 ul{
     list-style-type: none;
+    cursor: pointer;
 }
-.footer-col{
-    width: 25%;
-}
-
-.footer-col ul li {
-    margin-top:20px;
-    font-size: 12px;
+.footer_social{
+    height: 210px;
     font-family: HelveticaNeue;
-    color: white;
-    display: block;
-}
-.footer-col ul li a{
-    color:white;
-    text-decoration: none;
-}
-.footer-bot{
-    background-color: #eaeaea;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    font-family:  HelveticaNeue;
     font-size: 12px;
-    margin-bottom: 0;
-    padding: 0;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.92;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
-.footer-bot-logo {
+.footer_top_sec3{
+    margin-right: 10%;
+    display: flex;
+    margin-top: -10%;
+  
+}
+.footer_links{
+    display: flex;
+    flex-direction: row;
+}
+.footer_bottom {
+    height: auto;
+    padding: 35px 0px;
+    background-color: var(--white-two);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.footer_bottom_logo {
     width: 162px;
     height: 46px;
     object-fit: contain;
+    margin-bottom: 20px;
+}
+.footer_text {
+    width: auto;
+    height: auto;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white);
+    margin: 20px 0px;
+}
+.footer_disclamer {
+    width: auto;
+    height: auto;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--char-color);
+}
+input {
+    width: auto;
+    height: 40px;
+    background-color: var(--white);
+} 
+.newsletter{
+      color: var(--background-body);
+      font-family: BerkeleyStd;
+      font-size: 18px;
 }
 .arrow{
-    position: absolute;
-    background-color: #006778;
-    color: white;
-    margin-right: 0;
-    border:1px solid white;
+    background-color: var(--background_color);
+    width: auto;
+    height: 40px;
+    color: var(--background-body);
+    margin-left: 0;
+
 }
+  

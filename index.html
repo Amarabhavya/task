@@ -13,30 +13,26 @@
 
 <body>
     <header>
-        <div class="container2">
-            <div >
-                <ul class="loginwrapper">
-                    <li  class="needassistance"><a>Need Assistance?</a></li>
-                    <div>
-                        <select class="dropdown" name="select_values">
-                            <option value="A1029087 - John Cars" class="users">A1029087 - John Carson Ec…</option>
-                            <option value="user_2" class="users">user_2</option>
-                            <option value="user_3" class="users">user_3</option>
-                        </select>
-                    </div>
-                    <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fa fa-user-circle"></i></a></li>
-                </ul>
+        <div class="site_header">
+            <div class="loginwrapper">
+                <span class="header_text_needAssistance">Need Assistance?</span>
+                <select id="dropdown" name="select_values">
+                    <option value="A1029087 - John Cars" class="users">A1029087 - John Carson Ec…</option>
+                    <option value="user_2" class="users">user_2</option>
+                    <option value="user_3" class="users">user_3</option>
+                </select>
+                <a href="" class="mail"><i class="fa fa-envelope"></i></a>
+                <a href="" class="profile"><i class="fa fa-user-circle"></i></a>
             </div>
-            <div >
-                <ul class="linkwrapper">
-                    <li><img class="headlogo" src="assets/images/vanguard.png" alt="vanguard"></li>
-                    <li><a href="#">ACCOUNT SUMMARY</a></li>
-                    <li><a href="#">GRANTS</a></li>
-                    <li><a href="#">CONTRIBUTIONS</a></li>
-                    <li><a href="#">INVESTMENT</a></li>
-                    <li><a href="#">RESOURCES</a></li>
-                    <li><a href="#">MY ACCOUNT</a></li>
+            <div class="site_header_bottom">
+                <img class= 'headlogo' src="assets/images/vanguard.png" alt = 'logo'>
+                <ul class="header_bottom_links">
+                    <li class="header_bottom_text">ACCOUNT SUMMARY</li>
+                    <li class="header_bottom_text">GRANTS</li>
+                    <li class="header_bottom_text">CONTRIBUTIONS</li>
+                    <li class="header_bottom_text">INVESTMENTS</li>
+                    <li class="header_bottom_text">RESOURCES</li>
+                    <li class="header_bottom_text">MY ACCOUNT</li>
                 </ul>
             </div>
             <div class="onlineexp">
@@ -46,146 +42,134 @@
         </div>      
     </header>
     <main>
-        <p class="home">Home  >  Account overview</p>
-        <p class="account">Account Overview</p>
-        <p class="church">The Church Fund-A1050919</p>
-        <p class="balance">Balances as of 12/12/2012</p>
-        <div class="warn">
-            <div class="warning">
-                <p><i class="fa fa-warning" style="color: #e37222;"></i>
-                    There is a<span class=" pending"> Pending Contribution </span>on your account that needs attention </p>        
-            </div>
-            <button class="crossbtn"><i class="fa fa-times"></i></button>
+        <div class="account_overview">
+            <p class="home">Home  >  Account overview</p>
+            <p class="account">Account Overview</p>
+            <p class="text_fund">The Church Fund-A1050919</p>
+            <p>Balances as of 12/12/2012</p>
         </div>
-        
-        <div class="middle">
-            <div class="box">
-                <div class="cur_avail">
-                    <div class="current">
-                        <p class="currentbalance">
-                            Current balance <span class="shape"><em>i</em></span>
-                            </br><span class="amount">$120,000</span>
-                        </p>
-                    </div>
-                    <div class="available">
-                        <p class="availablebalance">
-                            Available Balance <span class="shape"><em>i</em></span>
-                            </br><span class="amount">$30,000</span>
-                            </br><a href="" class="summary"><span class="transaction">VIEW TRANSACTION SUMMARY &#8594</span></a>
-                        </p>
-                    </div>
-                </div>  
-                <div class="contentwrapper">
-                        <div class="nav">
-                            <p class="grants"><a href="">Grants</a></p>
-                            <p class="active" id="contributions"><a href="">contributions</a></p>
-                            <p class="exchange"><a href="">exchange</a></p>
-                            <p class="ot"><a href="">Other Transactions</a></p>
-                        </div>
-                        <p class="gift">Gift ID:43567</p>
-                        <p class="tax"> Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares</p>
-                        <ul class="data">
-                            <li class="entereddata">Entered date</li>
-                            <li>Received date</li>
-                            <li>Number of shares</li>
-                        </ul>
-                        <ul class="value">
-                            <li class="edate">10/04/2019</li>
-                            <li class="rdate">10/04/2019</li>
-                            <li class="shares">50</li>
-                        </ul>
-                        <ul class="data2">
-                            <li style="margin-left: -10px;">Type</li>
-                            <li style="margin-left: 120px;">Amount</li>
-                            <li style="margin-left: 95px;">Status</li>
-                        </ul>
-                        <ul class="value2">
-                            <li style="margin-left:-10px;">VBS SECURITY</li>
-                            <li style="margin-left: 30px;">$50,000.00</li>
-                            <li style="margin-left: 80px;">Entered</li>
-                        </ul>
-                    <div class="hline"></div>
-                    <p class="transaction" style="margin-left: 32px;"><a style="color: #006778;">VIEW CONTRIBUTION ACTIVITY &#8594</a></p>
-        
-                </div>
-                 
+        <div class="site_body">
+            <div  class=" bodywrapper">
+            <div>
+            <div class="balance">
+                <span class="balance_text">Current Balance</span>
+                <span class="amount">$120,000</span>
             </div>
-            <div class="menu">
-                <a href=""><button class="contributions_button">Contributions &#8594</button></a>   
-                <a href=""><button class="grant_button">Grant &#8594</button></a>  
-                <a href=""><button class="exchange_button">Exchange &#8594</button></a>  
-                        <select class="manage">
-                            <option value="Manage your account">Manage your Account</option>
-                            <option value="opt_2">View Transactions</option>
-                            <option value="opt_3" >View Statement</option>
-                        </select>
-                 
+            <div class="balance">
+                <p class="balance_text">Available Balance</p>
+                <p class="amount">$30,000
+                </br><span class="summary">View Transaction Summary</span>
+                </p>
+                
+            </div>
+            </div>
+            <div class="transactions">
+                <div class="nav">
+                    <p class="grants"><a href="">Grants</a></p>
+                    <p class="active" id="contributions"><a href="">contributions</a></p>
+                    <p class="exchange"><a href="">exchange</a></p>
+                    <p class="ot"><a href="">Other Transactions</a></p>
+                </div>
+                <div class="text_wrapper">
+                    <span class="giftid">Gift ID: 4436109</span>
+                    <span class="content">Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares.</span>
+                </div>
+                <div class="option_wrapper_body">
+                    <ul class="options">
+                        <li class="option_ele">Entered Date</li>
+                        <li class="option_ele" >Received Date</li>
+                        <li class="option_ele" >Number of Shares</li>
+                    </ul>
+                    <ul class="option_value">
+                        <li class="option_ele" >10/04/2019</li>
+                        <li class="option_ele" >10/04/2019</li>
+                        <li class="option_ele" >50</li>
+                    </ul>
+                    <ul class="options">
+                        <li class="option_ele" >Type</li>
+                        <li class="option_ele" >Amount</li>
+                        <li class="option_ele" >Status</li>
+                    </ul>
+                    <ul class="option_value">
+                        <li class="option_ele" >VBS Security</li>
+                        <li class="option_ele" >$50,000.00</li>
+                        <li class="option_ele" >Entered</li>
+                    </ul>
+                </div>
+                <div><hr>
+                    <span class="View-Contribution">View Contribution Activity &#8594</span>
+                </div>
+            </div>
+            </div>
+            <div class="button_wrapper">
+                <button class="button button_prop"><span>Contribution</span></button>
+                <button class="button button_prop" ><span>Grant</span></button>
+                <button class="button button_prop"><span>Exchange</span></button>
+                <select id="dropdown_body" name="select_values">
+                    <option value="Manage your account" class="users">Manage your Account</option>
+                    <option value="opt_2" class="users">opt_2</option>
+                    <option value="opt_3" class="users">opt_3</option>
+                </select>
             </div>
             <div class="learnmore">
-                    <section>
-                        <button class="lbutton" ><i class="fa fa-angle-left"></i></button>
-                        <p style="margin-top: 28px;">Featured </br> <span class="learn">Learn how to value </br>your contributions</span>  </p>
-                        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Hic placeat labore consectetur dolorem.
-                        </br></br> <span style="color: #006778;font-size: 16px;">LEARN MORE &#8594</span> 
-                        </p>
-                        
-                    </section>
-                    <img src="assets/images/logo.png" alt="" class="leaf">
-                    <button class="rbutton" > <i class="fa fa-angle-right"></i></button>
+                <section>
+                    <button class="lbutton" ><i class="fa fa-angle-left"></i></button>
+                    <p style="margin-top: 28px;">Featured </br> <span class="learn">Learn how to value </br>your contributions</span>  </p>
+                    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Hic placeat labore consectetur dolorem.
+                    </br></br> <span style="color: #006778;font-size: 16px;">LEARN MORE &#8594</span> 
+                    </p>
                     
+                </section>
+                <img src="assets/images/logo.png" alt="" class="leaf">
+                <button class="rbutton" > <i class="fa fa-angle-right"></i></button>
+                
             </div>
-    
+            
         </div>
-        <div>
-            <button class="create">CREATE ANOTHER FUND &#8594</button>
-            <button class="invite">INVITE INTERESTED PARTIES &#8594</button>
+        <div class="bottom_buttons">
+            <button class="button"><span>Create Another Fund &#8594</span></button>
+            <button class="button"><span>Invite Interested Parties &#8594 </span></button>
         </div>
     </main>
     
-    
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <ul>
-                        <li><img class="vlogo"src="assets/images/footer_logo.png" alt="vanguard"></li>
-                        <li><i class="fa fa-linkedin"></i>  Follow us on linkedin</li>
-                        <li>&copy; 2019 Vanguard Charitable Endowment Program</li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <ul>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CARRERS</a></li>
-                        <li><a href="#">FAQS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">GIVING MATTERS BLOG</a></li>
-                        <li><a href="#">NEWS & EVENTS</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <ul>
-                        <li><a href="#">SITEMAP</a></li>
-                        <li><a href="#">FORMS</a></li>
-                        <li><a href="#">POLICY & GUIDELINES</a></li>
-                        <li><a href="#">PRIVACY POLICY</a></li>
-                        <li><a href="#">COMPANY POLICIES</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <ul>
-                        <li>Subscribe to our Newsletters</li>
-                        <li><input type="text" name="" id="" placeholder="Enter your email address"    >
-                            <button class="arrow"> <i class="fa fa-arrow-right"></i></button>
-                        </li>
-                    </ul>
-                </div>
+        <section class="footer_top">
+            <div class="footer_top_sec1">
+                <img class= 'logo' src="Assets/images/footer_logo.png" alt = 'logo'>
+                <span class="footer_text"><i class="fa fa-linkedin"></i> Follow us on LinkedIn</span>
+                <span class="footer_text">&copy; 2019 Vanguard Charitable Endowment Program</span>
             </div>
-        </div>
-        <div class="footer-bot">
-             <img src="assets/images/van_logo.png" alt="van_logo" class="footer-bot-logo">
-             <p>&copy; 2019 Vanguard Charitable Endowment Program. Vanguard and the Vanguard ship logo are the trademarks of the Vanguard Group Inc</p>
-        </div>
+            <div class="footer_links">
+                <ul class="footer_social">
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">FAQS</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Giving Matters Blog</a></li>
+                    <li><a href="">NEWS AND EVENTS</a></li>
+                </ul>
+                <ul class='footer_social'>
+                    <li><a href="">Sitemap</a></li>
+                    <li><a href="">Forms</a></li>
+                    <li><a href="">Request Literature</a></li>
+                    <li><a href="">policy & guidelines</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">company policies</a></li>
+                </ul>
+            </div>
+            <div class = "footer_top_sec3">
+                <ul>
+                    <li class="newsletter">Subscribe to our Newsletters</li>
+                    <li><input type="text" id="" placeholder="Enter your email address"    >
+                        <button class="arrow"> <i class="fa fa-arrow-right"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer_bottom">
+            <img class="footer_bottom_logo" src="assets/images/van_logo.png" alt="vangard">
+            <span class="footer_disclamer">© 2019 Vanguard Charitable Endowment Program. VANGUARD and the Vanguard Ship Logo are trademarks of The Vanguard Group, Inc.</span>
+        </section>
     </footer>
    
 </body>

@@ -88,33 +88,20 @@ ul{
     margin-bottom: 20px;
 }
 .footer_text {
-    width: auto;
-    height: auto;
     font-family: HelveticaNeue;
     font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
     text-align: center;
     color: var(--white);
     margin: 20px 0px;
 }
 .footer_disclamer {
-    width: auto;
-    height: auto;
     font-family: HelveticaNeue;
     font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
     text-align: center;
     color: var(--char-color);
 }
 input {
+    margin-top: 15px;
     width: auto;
     height: 40px;
     background-color: var(--white);
@@ -125,11 +112,12 @@ input {
       font-size: 18px;
 }
 .arrow{
-    background-color: var(--background_color);
+    background-color: var(--button);
     width: auto;
     height: 40px;
     color: var(--background-body);
     margin-left: 0;
+    border: 1px solid var(--background-body);
 
 }
   

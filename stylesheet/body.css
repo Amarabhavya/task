@@ -347,7 +347,6 @@ li a{
     
     .balance{
         width: calc(100% - 30px);
-        height: 140px;
         align-items: center;
         margin: 15px auto;
     }
@@ -373,13 +372,16 @@ li a{
         display: block;
         margin: 0 10px;
     }
+    .View-Contribution{
+        margin-bottom:5px ;
+    }
     .button_wrapper{
         display: block;
     }
     .button{
         display: block;
         width: calc(100% - 30px);
-        margin: 5px 10px;
+        margin: 10px 10px;
     
     }
     #dropdown_body{

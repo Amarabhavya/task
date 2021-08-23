@@ -127,42 +127,12 @@ li{
     border-bottom-style: solid;
 }
 .content {
-    width: 491px;
-    height: 24px;
+    /* width: 491px;
+    height: 24px; */
     margin: 15px 0px 0px 30px;
     font-family: HelveticaNeue;
     font-size: 16px;
     color: var(--char-color);
-}
-.options {
-    height: 24px;
-    margin: 20px 0px 0 30px;
-    font-family: HelveticaNeue;
-    font-size: 16px;
-    color: var(--char-color);
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-}
-.option_value {
-    height: 24px;
-    margin: 0 0px 20px 30px;
-    font-family: HelveticaNeue;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--background_color);
-    display: flex;
-    flex-direction: row;
-    padding-inline-start: 0px;
-}
-.option_value li{
-    width: 200px;
-    padding-right: 10%;
-}
-.options li{
-    width: 200px;
-    padding-right: 10%;
 }
 hr{
     margin: 10px 30px 20px 30px;
@@ -266,7 +236,6 @@ hr{
   
 .button {
     display: inline-block;
-    border-radius: 4px;
     background-color: var(--button);
     border: none;
     color: var(--white);
@@ -357,35 +326,71 @@ li a{
 .learn-text{
     display: flex;
 }
-@media screen and (max-width:800px)
-{
+.items{
+    display: inline-block;
+    padding: 0 30px;
+    font-family: HelveticaNeue;
+}
+.option-value{
+    font-weight: bold;
+}
+  
+@media only screen and (max-width:767px){
     .body-wrapper{
         display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .account_overview{
+        margin: 5%;
+    }
+    
+    .balance{
+        width: calc(100% - 30px);
+        height: 140px;
+        align-items: center;
+        margin: 15px auto;
     }
     .transactions{
+        width: calc(100% - 30px);
+        height:auto;
+        margin: 15px auto;
+
+    }
+    .transaction-items{
+        display: flex;
+        overflow-x: auto;
+    }
+    .options{
         display: block;
-        width: 500px;
-        margin-left: 0%;
+        margin: 0 10px;
+    }
+    .option_value{
+        display: block;
+        margin: 0 10px;
+    }
+    .items{
+        display: block;
+        margin: 0 10px;
     }
     .button_wrapper{
         display: block;
-        margin-left: 10%;
-        text-align: center;
     }
     .button{
         display: block;
-        width:316px
+        width: calc(100% - 30px);
+        margin: 5px 10px;
+    
     }
     #dropdown_body{
-        width: 316px;
-        margin-left: 2%;
-        text-align: center;
+        width: calc(100% - 30px);
+        margin: 5px 10px;
     }
-    /* .learn-more{
-        display: block;
-    } */
-    .lsection{
-        display: flex;
+    .learn-more{
+        width: calc(100% - 30px);
+        height: auto;
+        margin: 15px auto;
+        overflow-x: auto ;
     }
     .learn-text{
         display: block;
@@ -395,12 +400,6 @@ li a{
     }
     .lorem{
         margin:0;
-        font-size: 12px;
-    }
-    .leaf{
-        margin:0px;
-        width: 108px;
-        height: 123px;
     }
     .learn-value{
         font-size: 20px;
@@ -412,11 +411,58 @@ li a{
     }
     .bottom_buttons{
         display: block;
-        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px){
+    .body-wrapper{
+        display: block;
     }
     .account_overview{
-        margin-left: 60px;
+        margin-left: 10%;
     }
+    .cur-avail-balance{
+        display: flex;
+        justify-content: space-around;
+        max-width: 700px;
+        margin: auto;
+    }
+    .transactions{
+        width: calc(100% - 30px);
+        margin-left: 0;
+    }
+    .items{
+        display: inline-block;
+        padding: 0 50px;
+    }
+    .button_wrapper{
+        display: block;
+        align-items: center;
+    }
+    .button{
+        display: block;
+        width: calc(100% - 100px);
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     
+    }
+    #dropdown_body{
+        width: calc(100% - 100px);
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .learn-more{
+        width: calc(100% - 90px);
+    }
+    .lbutton{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .lorem{
+        font-size: 13px;
+        margin-left: 70px;
+    }
 }
-  

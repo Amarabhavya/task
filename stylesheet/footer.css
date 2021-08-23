@@ -120,4 +120,15 @@ input {
     border: 1px solid var(--background-body);
 
 }
-  
+@media screen and (max-width:800px)
+{
+    footer{
+        display: block;
+    }
+    .footer_top_sec3{
+        margin-top: 30px;
+    }
+    input{
+        width: 300px;
+    }
+}

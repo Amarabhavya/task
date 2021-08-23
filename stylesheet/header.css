@@ -1,117 +1,161 @@
 @font-face {
-  font-family: HelveticaNeue;
-  src: url('../assets/fonts/HelveticaNeue/HelveticaNeue-Condensed.ttf');
-}
-@font-face {
-  font-family: BerkeleyStd;
-  src: url('../assets/fonts/BerkeleyStd-Book.otf');
-}
-:root {
-    --blue: #1e90ff;
-    --white: #ffffff;
-    --background_color: #022737;
-    --white-two: whitesmoke;
-    --char-color: #505050;
-    --button: #006778;
-    --line: #006778;
-    --background-body: #eaeaea;
-    --mos-green: #69923a;
-    --border-taskbar-body: #d9d9d9;
-    --background-taskbar-body: #f1f1f1;
-}
-.login-wrapper {
-  height: auto;
-  padding: 10px;
-  background-color: var(--background_color);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.need-assistance {
-  font-family: HelveticaNeue;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  color:var(--white);
-  margin-left: 50%;
-}
-.users {
-  width: auto;
-  height: auto;
-  font-family: HelveticaNeue;
-  font-size: 12px;
-  font-weight: bold;
-  color: var(--background_color);
-}
-.profile {
-  color: var(--white);
-  margin-right: 10%;
-  border-radius: 10px;
-}
-.mail {
-  color: var(--white);
-}
-#dropdown {
-  height: 20px;
-  border-radius: 10.5px;
-  background-color: var(--white);  
-  font-family: HelveticaNeue;
-  font-size: 12px;
-  font-weight: bold;
-  color: var(--background_color);
-}
-
-.link-wrapper{
-  height:auto;
-  background-color: var(--white);
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  padding: 10px 60px 10px 120px;
-}
-.headlogo {
-  width: 143px;
-  height: 60px;
-  object-fit: contain;
-  display:inline-block;
-}
-.header-links{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-}
-.header-links li a {
     font-family: HelveticaNeue;
-    font-size: 14px;
+    src: url('../assets/fonts/HelveticaNeue/HelveticaNeue-Condensed.ttf');
+  }
+  @font-face {
+    font-family: BerkeleyStd;
+    src: url('../assets/fonts/BerkeleyStd-Book.otf');
+  }
+  :root {
+      --blue: #1e90ff;
+      --white: #ffffff;
+      --background_color: #022737;
+      --white-two: whitesmoke;
+      --char-color: #505050;
+      --button: #006778;
+      --line: #006778;
+      --background-body: #eaeaea;
+      --mos-green: #69923a;
+      --border-taskbar-body: #d9d9d9;
+      --background-taskbar-body: #f1f1f1;
+  }
+  .login-wrapper {
+    height: auto;
+    padding: 10px;
+    background-color: var(--background_color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .need-assistance {
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color:var(--white);
+    margin-left: 50%;
+  }
+  .users {
+    width: auto;
+    height: auto;
+    font-family: HelveticaNeue;
+    font-size: 12px;
     font-weight: bold;
     color: var(--background_color);
+  }
+  .profile {
+    color: var(--white);
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+  .mail {
+    color: var(--white);
+  }
+  #dropdown {
+    height: 20px;
+    border-radius: 10.5px;
+    background-color: var(--white);  
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--background_color);
+  }
+   span a{
+      text-decoration: none;
+      color: white;
+  } 
+  .navbar{
+    height:auto;
+    background-color: var(--white);
     display: flex;
-    margin: 0px 10px;
-    /* flex: 2; */
-}
-.header-links li a:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.onlineexp{
-  background-color: var(--background-body);
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  font-family: HelveticaNeue;
-  font-size: 14px;
-  align-items: center;
-  align-content: center;
-  justify-content: left;
-  border-bottom: solid 2px var(--line);
-}
-.experience{
-  margin-left: 140px;
-}
-span a{
-  color: var(--background-body);
-  text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 60px 10px 120px;
+  }
+  .headlogo {
+    width: 143px;
+    height: 60px;
+    object-fit: contain;
+    display:inline-block;
+  }
+  li a{
+      text-decoration: none;
+  }
+  nav ul li{
+      display: inline-block;
+      text-align: center;
+      justify-content: space-between;
+      padding: 10px;
+  }
+  nav{
+      display: flex;
+      background-color: #eaeaea;
+  }
+  .header-links li a{
+      font-size: 14px;
+      display: block;
+      color: black;
+      font-weight: bold;
+      color: var(--background_color);
+  }
+  .header-links li a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .menu{
+    display: none;
+  }
+  .onlineexp{
+    background-color: var(--background-body);
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    align-items: center;
+    align-content: center;
+    justify-content: left;
+    border-bottom: solid 2px var(--line);
+  }
+  .experience{
+    margin-left: 140px;
+  }
+  
+@media all and (max-width:800px){
+    .menu{
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 60px;
+    }
+    .navbar{
+      /* padding-left: 60px; */
+      flex-direction: column;
+    }
+    nav ul li{
+      display: block;
+      border-top: 2px solid #022737;
+      padding: 10px;
+    }
+    .header-links{
+      padding-top: 10px;
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+    .check{
+      display: block;
+    }
+    .login-wrapper{
+      height: auto;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .headlogo{
+      margin: 0;
+    }
+
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylesheet/header.css">
     <link rel="stylesheet" href="stylesheet/body.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
+    <!-- <script src="script.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
@@ -14,7 +15,7 @@
     <header>
         <section>
             <div class="login-wrapper">
-                <span class="need-assistance"><a href="">Need Assistance?</a></span>
+                <p class=" need-assistance" onClick="open_help()">Need Assistance?</p>
                 <select id="dropdown" name="select_values">
                     <option value="A1029087 - John Cars" class="users">A1029087 - John Carson Ec…</option>
                     <option value="user_2" class="users">user_2</option>
@@ -35,23 +36,44 @@
                     <li><a href="">MY ACCOUNT</a></li>
                 </ul>
             <div class="menu" id="toggle">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars" id="btn"></i>
             </div>
-        </nav>
-        <script>
-            const togglebutton = document.getElementById('toggle');
-            const navlist=document.getElementById('nav-list');
-
-            togglebutton.addEventListener('click', () =>{
-                navlist.classList.toggle('check');
-            })
-        </script>
+        </nav>        
         <div class="onlineexp">
             <P  class="experience">Welcome to our beta online experience. You can leave the test any time and return to the previous version of <span style="text-decoration: underline; color:
                 #006778;">Vanguard Charitable</span></P>
         </div>
+        <script src="script.js"></script>
         
-    </header>   
+    </header>
+        <div class="help" id="help">
+            <i class="fa fa-close" onclick="close_help()"></i>
+            <p class="title">Need Assistance?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, tempore magnam exercitationem minus nulla, voluptate temporibus nobis nemo voluptatem molestiae cumque cum sit cupiditate vel dolorem corrupti distinctio similique incidunt.</p>
+
+            <p class="answers">For answers to other common questions, click here to go to our FAQ section.</p>
+            <form action="#">
+
+                <p>Seeking Assistance for <span class="user_name"> A1029087 John Carson</span></p>
+
+                <label for="name">Name: <span class="required">*</span></label>
+                <br>
+                <input type="text" name="name" id="name" min="5" placeholder="Enter your name" required>
+                <br>
+                <label for="email">Email: <span class="required">*</span></label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter your Email Id" required>
+                <br>
+                <label for="query">Query: <span class="required">*</span></label>
+                <br>
+                <textarea name="query" id="query" cols="40" rows="20" minlength="10" placeholder="Enter your Message" required></textarea>
+                <br>
+                <button type="submit">Send</button>
+                <br>
+                <span class="required">*</span>Required
+            </form>
+
+        </div>   
         <main>
             <div class="account_overview">
                 <p class="home">Home  >  Account overview</p>

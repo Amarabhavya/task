@@ -18,6 +18,7 @@
     --mos-green: #69923a;
     --border-taskbar-body: #d9d9d9;
     --background-taskbar-body: #f1f1f1;
+    --light-grey-blue:#b6bdbd;
 }
 .login-wrapper {
   height: auto;
@@ -33,6 +34,7 @@
   letter-spacing: 0.5px;
   color:var(--white);
   margin-left: 50%;
+  cursor: pointer;
 }
 .users {
   width: auto;
@@ -121,11 +123,75 @@ nav{
 .experience{
   margin-left: 10%;
 }
-
+.title {
+  font-size: 40px;
+}
+.help{
+  display: none;
+  background-color: var(--white);
+}
+#help i{
+  font-size: 25px;
+  right: 20px;
+  position: absolute;
+  top: 10px;
+  padding: 5px;
+}
+#help *{
+  margin: 30px 0;
+}
+#help{
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  overflow: auto;
+  padding: 30px 80px;
+}
+.answers{
+  color: var(--button);
+  font-weight: bold;
+}
+.help > p:nth-child(3){
+  color: var(--light-grey-blue);
+}
+.user_name{
+  color: var(--button);
+  font-weight: bold;
+}
+.help label{
+  color: var(--light-grey-blue);
+  font-size: 20px;
+  font-weight: bold;
+}
+.required{
+  color: red;
+}
+.help input{
+  width: 200px;
+  height: 40px;
+  margin: 10px;
+}
+.help form button{
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: var(--button);
+  width: 70px;
+  height: 50px;
+  border: none;
+  color: var(--background-body);
+}
 @media only screen and (max-width:767px){
   .need-assistance{
     margin: 0px;
     padding: 5px;
+  }
+  #help{
+    width: 100%;
+    padding: 30px 40px;
   }
   #dropdown{
     margin: 5px;

@@ -43,7 +43,7 @@
             <P  class="experience">Welcome to our beta online experience. You can leave the test any time and return to the previous version of <span style="text-decoration: underline; color:
                 #006778;">Vanguard Charitable</span></P>
         </div>
-        <script src="script.js"></script>
+        
         
     </header>
         <div class="help" id="help">
@@ -98,48 +98,19 @@
                 </div>
                 <div class="transactions">
                     <div class="transaction-items">
-                        <span class="tablinks" onclick="open_data(event,'grants')"></span>
-                        <p class="grants"><a href="">Grants</a></p>
-                        <p class="active" id="contributions"><a href="">contributions</a></p>
-                        <p class="exchange"><a href="">exchange</a></p>
-                        <p class="ot"><a href="">Other Transactions</a></p>
+                    <button class="tablinks active" onclick="open_data(event,'Grants')"><p>Grants</p></button>
+                    <button class="tablinks" onclick="open_data(event,'contribution')"><p>Contributions</p></button>
+                    <button class="tablinks" onclick="open_data(event,'exchange')"><p>Exchange</p></button>
+                    <button class="tablinks" onclick="open_data(event,'others')"><p>Other Transactions</p></button>
                     </div>
-                    <div class="text_wrapper">
-                        <span class="giftid">Gift ID: 4436109</span>
-                        <span class="content">Vanguard New Jersey Long-Term Tax-Exempt Fund Admiral Shares.</span>
-                    </div>
-                    <div class="features">
-                        <div class="items">
-                            <p>Entered Data</p>
-                            <p class="option-value">10/04/2019</p>
-                        </div>
-                        <div class="items">
-                            <p>Received Data</p>
-                            <p class="option-value">10/04/2019</p>
-                        </div>
-                        <div class="items">
-                            <p>Number of shares</p>
-                            <p class="option-value">50</p>
-                        </div>
-                        <div class="items">
-                            <p>Type</p>
-                            <p class="option-value">VBS Security</p>
-                        </div>
-                        <div class="items">
-                            <p>Amount</p>
-                            <p class="option-value">$50,000</p>
-                        </div>
-                        <div class="items">
-                            <p>Status</p>
-                            <p class="option-value">Entered</p>
-                        </div>
-
-                    </div>
+                    <div class="text_wrapper"></div>
+                    <div class="option-wrapper-body"></div>
                     <div><hr>
                         <span class="View-Contribution">View Contribution Activity &#8594</span>
                     </div>
                 </div>
                 </div>
+               
                 <div class="button_wrapper">
                     <button class="button button_prop"><span>Contributions &#8594</span></button>
                     <button class="button button_prop" ><span>Grant &#8594</span></button>
@@ -196,12 +167,6 @@
                     </ul>
                 </div>
                 <div class = "footer_top_sec3">
-                    <!-- <ul>
-                        <li class="newsletter">Subscribe to our Newsletters</li>
-                        <li><input type="text" id="" placeholder="Enter your email address">
-                            <button class="arrow"> <i class="fa fa-arrow-right"></i></button>
-                        </li>
-                    </ul> -->
                     <div class="newsletter">Subscribe to our Newsletter</div>
                     <div class="search">
                         <input type="text"  placeholder="Enter Your Email Address" name="search"> <button class="searchbutton"><i class="fa fa-arrow-right"></i></button></div>
@@ -211,6 +176,7 @@
                 <img class="footer_bottom_logo" src="assets/images/van_logo.png" alt="vangard">
                 <span class="footer_disclamer">&copy; 2019 Vanguard Charitable Endowment Program. VANGUARD and the Vanguard Ship Logo are trademarks of The Vanguard Group, Inc.</span>
             </section>
+            <script src="script.js"></script>
         </footer>
         
 </body>

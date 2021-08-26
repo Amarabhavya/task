@@ -31,49 +31,55 @@ window.onclick = function(event) {
         }
 }
 
-function open_data(evt, dataName) {
-    const features = document.getElementsByClassName("features");
-    for(let i=0;i<features.length;i++)
-    {
-        features[i].style.display = "none";
-    }
 
+
+
+
+fetch('data.json').then(response => response.json()).then(data => {
+    let values = document.querySelector('.option-wrapper-body');
+    let disclamer = document.querySelector('.text_wrapper');
+    let x = 'Grants';
+    {
+      for( y in data[x]){
+        //console.log(y,data[x][y]);
+        if(y=='info'){
+          disclamer.innerHTML += `<span class="giftid">Gift ID: 4436109</span>
+          <span class="content">${data[x]['info']}</span>`;
+          continue;
+        }
+        values.innerHTML += `<div class=items>
+        <div>${y}</div>
+        <div class=option-value>${data[x][y]}</div>
+        </div>`
+      }
+    }
+  })
+  
+  function open_data(event, currTab) {
+    //console.log(currTab);
+    let x=currTab;
     const tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(dataName).style.display = "block";
-      evt.currentTarget.className += " active";
-}
-
-
-const features = document.getElementsByClassName("features");
-
-const enteredDate = document.querySelector(".EnteredDate");
-const receivedDate = document.querySelector(".ReceivedDate");
-const noofshares= document.querySelector(".NumberofShares");
-const type= document.querySelector(".Type");
-const amount= document.querySelector(".Amount");
-const status = document.querySelector(".Status");
-
-
-
-
-
-
-fetch('data.json')
-.then(response => response.json())
-.then(data =>{
-    for(let x in features){
-        var value= features.firstElementChild.innerHTML;
-        enteredDate[x].innerHTML = data[value].EnteredDate;
-        receivedDate[x].innerHTML = data[value].ReceivedDate;
-        numberOfShares[x].innerHTML = data[value].NumberofShares;
-        type[x].innerHTML = data[value].Type;
-        amount[x].innerHTML = data[value].Amount;
-        status[x].innerHTML = data[value].Status;
-        info[x].innerHTML = data[value].info;
-        
+      tablinks[i].classList.remove('active');
     }
-    
-})
+    event.currentTarget.classList.add('active');
+    fetch('data.json').then(response => response.json()).then(data => {
+      let values = document.querySelector('.option-wrapper-body');
+      values.innerHTML = ``;
+      let disclamer = document.querySelector('.text_wrapper');
+      {
+        for( y in data[x]){
+          //console.log(y,data[x][y]);
+          if(y=='info'){
+            disclamer.innerHTML = `<a class="giftid" href="#">Gift ID: 4436109</a>
+            <span class="content">${data[x]['info']}</span>`;
+            continue;
+          }
+          values.innerHTML += `<div class=items>
+          <div>${y}</div>
+          <div class=option-value>${data[x][y]}</div>
+          </div>`
+        }
+      }
+    })
+  }

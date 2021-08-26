@@ -123,8 +123,8 @@ li{
     font-size: 20px;
     font-weight: 500;
     color: var(--line);
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+    border-bottom: 2px solid var(--line);
+    text-decoration: none;
 }
 .content {
     /* width: 491px;
@@ -148,65 +148,26 @@ hr{
     font-weight: bold;
     color: var(--button);
 }
-.transaction-items p a{
-    text-decoration: none;
-    color: black;
-}   
-.transaction-items p a:hover:not(.active){
-    color: #006778;
-} 
-.active{
-    color: #006778;
+.transaction-items .tablinks.active{
+    color: var(--button);
+    background-color: var(--white);
+    border-top: 4px solid var(--button);
 }
 .transaction-items{
     display: flex;
     flex-direction: row;
 }
-.grants{
-    width:120px;
-    height:56px;
-    background-color:#eaeaea ;
-    margin:0;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items:center;
-    border: 1px solid   rgba(0, 103, 120, 0.1);
+.transaction-items button{
+    border: none;
+    width: 130px;
+    height: 56px;
+    margin: 0;
+    text-align: center;
+    font-family: HelveticaNeue;
+    font-weight: bold;
+    font-size: 14px;
 }
-#contributions{
-    width:160px;
-    height:56px;
-    background-color:white ;
-    margin:0;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items:center;
-    color: #006778;
-    border-top: 4px solid #006778;
-}
-.exchange{
-    width:145px;
-    height:56px;
-    background-color:#eaeaea ;
-    margin:0;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items:center;
-    border: 1px solid rgba(0, 103, 120, 0.1);
-}
-.ot{
-    width:220px;
-    height:56px;
-    background-color:#eaeaea ;
-    margin:0;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items:center;
-    border: 1px solid rgba(0, 103, 120, 0.1);
-}
+
   
 .button_wrapper{
     display: flex;
@@ -328,11 +289,12 @@ li a{
 }
 .items{
     display: inline-block;
-    padding: 0 30px;
+    padding: 15px 30px;
     font-family: HelveticaNeue;
 }
 .option-value{
     font-weight: bold;
+    padding-top: 10px;
 }
   
 @media only screen and (max-width:767px){
@@ -435,7 +397,7 @@ li a{
     }
     .items{
         display: inline-block;
-        padding: 0 50px;
+        padding: 15px 50px;
     }
     .button_wrapper{
         display: block;
